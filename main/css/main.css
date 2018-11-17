@@ -121,7 +121,6 @@ body {
   text-transform: uppercase;
   color: #666666;
 }
-
 @media (max-width: 1200px) {
   .conteiner {
     width: 45%;
