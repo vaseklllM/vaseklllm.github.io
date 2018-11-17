@@ -1,5 +1,7 @@
 body {
   font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -9,6 +11,7 @@ body {
   width: 45%;
 }
 .block_left .blok-img img {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin: 0 auto;
   display: block;
@@ -16,7 +19,8 @@ body {
   margin-top: 50px;
 }
 .block_left .blok-img img:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .block_left .blok-img h1, .block_left .blok-img h3 {
   text-align: center;
@@ -30,9 +34,15 @@ body {
   font-weight: normal;
 }
 .block_left .profile .profile-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .block_left .profile .profile-top img {
   width: 70px;
@@ -56,9 +66,15 @@ body {
   margin: 0 auto;
 }
 .block_left .contact .contact-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 30px;
 }
 .block_left .contact .contact-top img {
@@ -78,12 +94,18 @@ body {
   margin-left: 15px;
 }
 .block_left .contact .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .block_left .contact .info .block {
   width: 470px;
   margin: 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .block_left .contact .info .block .left {
@@ -102,9 +124,15 @@ body {
   margin-bottom: 50px;
 }
 .block_left .scills .scills-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 20px;
 }
 .block_left .scills .scills-top img {
@@ -130,8 +158,12 @@ body {
   margin-bottom: 5px;
 }
 .block_left .scills .siklls-content .boll {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .block_left .scills .siklls-content .boll .bl {
   width: 13px;
@@ -163,9 +195,15 @@ body {
   margin-bottom: 50px;
 }
 .block-right .education .education-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-top: 50px;
 }
 .block-right .education .education-content img {
@@ -224,9 +262,15 @@ body {
   margin-bottom: 50px;
 }
 .block-right .experience .experience-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-top: 50px;
 }
 .block-right .experience .experience-content img {
@@ -284,9 +328,15 @@ body {
   margin-bottom: 50px;
 }
 .block-right .software .software-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-top: 35px;
 }
 .block-right .software .software-top img {
@@ -306,6 +356,8 @@ body {
   margin-left: 15px;
 }
 .block-right .software .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .block-right .software .content .left-content, .block-right .software .content .right-content {
