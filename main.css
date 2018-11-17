@@ -124,7 +124,7 @@ body {
 }
 
 @media (max-width: 576px) {
-    #particles-js{
+    #particles-js .particles-js-canvas-el{
         display: none;
     }
     .conteiner{
