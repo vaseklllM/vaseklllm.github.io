@@ -12,6 +12,10 @@ body {
   margin: 0;
   padding: 0;
 }
+#particles-js{
+  top: 0;
+  left: 0;
+}
 .preloader{
   position: fixed;
   left: 0;
@@ -19,7 +23,7 @@ body {
   width: 100%;
   height: 100%;
   background-color:black;
-  z-index: 9999;
+  z-index: 5;
   transition: all 0.3s ease;
   opacity: 1;
   visibility: visible;
@@ -40,6 +44,17 @@ body {
     visibility: hidden;
   }
 }
+.punct{
+  color: white;
+  position: relative;
+  margin: 10px 0px 0px 60px;
+  font-size: 25px;
+  font-weight: 100;
+  background-color: #000000b0;
+  border-radius: 55px;
+  width: max-content;
+  padding: 10px 30px;
+}
 
 .portfolio {
   display: -webkit-box;
@@ -52,8 +67,8 @@ body {
 .conteiner {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  opacity: 0.8;
-  margin: 1.3% auto;
+  opacity: 0.85;
+  margin: 1.3%;
   overflow: hidden;
   width: 30%;
   height: 15.2vw;
@@ -61,7 +76,6 @@ body {
   position: relative;
   border: 2px solid rgba(130, 130, 130, 0);
 }
-
 .conteiner:hover {
   border: 2px solid #9c9c9c;
   opacity: 1;
@@ -161,7 +175,11 @@ body {
 @media (max-width: 1200px) {
   .conteiner {
     width: 45%;
-    height: 23.12vw;
+    height: 22.75vw;
+  }
+  .punct {
+    font-size: 18px;
+    padding: 10px 35px;
   }
 
   .conteiner .block p {
@@ -173,8 +191,19 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .conteiner {
+    width: 45%;
+    height: 22.6vw;
+  }
   .conteiner .block h3 {
     font-size: 14px;
+  }
+  .punct {
+    border: 1px solid #ffffff7a;
+    margin: 10px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 35px;
   }
 
   .conteiner .block p {
@@ -199,10 +228,17 @@ body {
   #particles-js .particles-js-canvas-el {
     display: none;
   }
+  .punct {
+    border: 1px solid #ffffff7a;
+    margin: 10px auto;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 35px;
+  }
 
   .conteiner {
     width: 100%;
-    height: 50vw;
+    height: 49vw;
     margin: 0;
   }
 
