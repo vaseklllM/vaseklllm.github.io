@@ -48,11 +48,12 @@ body {
   color: white;
   position: relative;
   margin: 10px 0px 0px 60px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 100;
-  background-color: #000000b0;
+  background-color: rgba(0, 0, 0, 0.69);
   border-radius: 55px;
-  width: max-content;
+  width: 100px;
+  text-align: center;
   padding: 10px 30px;
 }
 
@@ -149,7 +150,7 @@ body {
 }
 
 .conteiner .block a:hover {
-  background-color: #ca3b3b;
+  background-color: rgb(202, 59, 59);
   color: white;
 }
 
@@ -200,10 +201,11 @@ body {
   }
   .punct {
     border: 1px solid #ffffff7a;
-    margin: 10px 30px;
+    margin: 10px auto;
     font-size: 14px;
     font-weight: 700;
     padding: 10px 35px;
+    width: 70px;
   }
 
   .conteiner .block p {
@@ -234,6 +236,7 @@ body {
     font-size: 14px;
     font-weight: 700;
     padding: 10px 35px;
+    width: 60px;
   }
 
   .conteiner {
