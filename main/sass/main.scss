@@ -244,6 +244,16 @@ body {
       top: 2px;
     }
   }
+  .envelope{
+    svg{
+      width: 21px;
+      color: #ffffff;
+      fill: currentColor;
+      transform: scale(-1, 1);
+      position: relative;
+      top: 3px;
+    }
+  }
 }
 
 .footer .footer-center i{
@@ -324,8 +334,32 @@ body {
 
 	margin-right: 3px;
   margin-bottom: 5px;
-  &:hover{
-    background-color: white;
+  
+  &:hover {
+    background-color: #ffffff;
+  }
+  svg{
+    transition: all 0.3s ease;
+    width: 10px;
+    color: #ffffff;
+    fill: currentColor;
+    position: relative;
+    top: 3px;
+  }
+  .facebook-f{
+    left: 1px;
+  }
+  .twitter{
+    width: 20px;
+  }
+  .linkedin-in{
+    width: 16.5px;
+  }
+  .github{
+    top: 4px;
+    width: 19px;
+  }
+  &:hover > svg{
     color: #001d54;
   }
 }
