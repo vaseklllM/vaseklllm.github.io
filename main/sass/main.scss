@@ -224,12 +224,29 @@ body {
 /* Footer Center */
 
 .footer .footer-center{
-	width: 35%;
+  width: 35%;
+  .map{
+    svg{
+      width: 15px;
+      color: #ffffff;
+      fill: currentColor;
+    }
+  }
+  .phone{
+    svg{
+      width: 17px;
+      color: #ffffff;
+      fill: currentColor;
+      transform: scale(-1, 1);
+      position: relative;
+      top: -1px;
+    }
+  }
 }
 
 .footer .footer-center i{
 	background-color:  #001d54;
-	color: #ffffff;
+	
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
@@ -237,7 +254,7 @@ body {
 	text-align: center;
 	line-height: 42px;
 	margin: 10px 15px;
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .footer .footer-center i.fa-envelope{
