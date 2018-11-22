@@ -10,8 +10,9 @@
     <script src="main/js/particles.min.js" defer></script>
     <script src="main/js/app.js" defer></script>
     <script src="main/js/preloader.js" defer></script>
+    <script src="main/js/main.js" defer></script>
 </head>
-<body>     
+<body dir="body" >     
     
     <!-- preloader -->
     <div id="page-preloader" class="preloader">
@@ -24,69 +25,81 @@
     <!-- canvas -->
     
     <!-- content -->
-    <div class="list">
-        <h1 class="punct">Sites</h1>
-        <div class="portfolio">          
-            <div class="conteiner">
-                <div class="block">
-                    <img src="main/img/AgenciesWebsite.png" alt="AgenciesWebsite">
-                    <h3>Agencies Website</h3>
-                    <p>Сверстан на flexbox</p>
-                    <a href="https://vaseklllm.github.io/Agencies_Website/">Посмотреть</a>
-                </div><br>
-            </div>          
-            <div class="conteiner">
-                <div class="block">
-                    <img src="main/img/naviforce.png" alt="naviforce">
-                    <h3>naviforce min</h3>
-                    <p>Сверстан на flexbox</p>
-                    <a href="https://vaseklllm.github.io/naviforce_min/">Посмотреть</a>
-                </div><br>
+
+    
+    <nav class="nav-menu">
+        <ul>
+            <li id="sites">Sites</li>
+            <li id="other">Other</li>
+        </ul>
+    </nav>
+
+    <div id="content" class="content">
+        <div id="block-list" class="block-list">
+            <div id="row-sites" class="row">          
+                <div class="conteiner">
+                    <div class="block">
+                        <img src="main/img/AgenciesWebsite.png" alt="AgenciesWebsite">
+                        <h3>Agencies Website</h3>
+                        <p>Сверстан на flexbox</p>
+                        <a href="https://vaseklllm.github.io/Agencies_Website/">Посмотреть</a>
+                    </div>
+                </div>          
+                <div class="conteiner">
+                    <div class="block">
+                        <img src="main/img/naviforce.png" alt="naviforce">
+                        <h3>naviforce min</h3>
+                        <p>Сверстан на flexbox</p>
+                        <a href="https://vaseklllm.github.io/naviforce_min/">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="conteiner">
+                    <div class="block">
+                        <img src="main/img/next.png" alt="pulse_animation">
+                        <h3>Next</h3>
+                        <p>html + css + js</p>
+                        <a href="https://vaseklllm.github.io/next/">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="conteiner">
+                    <div class="block">
+                        <img src="main/img/shop.png" alt="shop">
+                        <h3>Интернет магазин</h3>
+                        <p>img</p>
+                        <a href="https://vaseklllm.github.io/shop/">Посмотреть</a>
+                    </div>
+                </div>  
+
             </div>
-            <div class="conteiner">
-                <div class="block">
-                    <img src="main/img/next.png" alt="pulse_animation">
-                    <h3>Next</h3>
-                    <p>html + css + js</p>
-                    <a href="https://vaseklllm.github.io/next/">Посмотреть</a>
-                </div><br>
+            <div id="row-other" class="row row-1">
+                <div class="conteiner">
+                    <div class="block">
+                        <img src="main/img/portfolio.png" alt="portfolio">
+                        <h3>Портфолио чну</h3>
+                        <p>Сверстан на flexbox</p>
+                        <a href="https://vaseklllm.github.io/chu_portfolio/">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="conteiner">
+                    <div class="block">
+                        <img src="main/img/pulse_animation.png" alt="pulse_animation">
+                        <h3>Обратная связь</h3>
+                        <p>html + css</p>
+                        <a href="https://vaseklllm.github.io/pulse_animation/">Посмотреть</a>
+                    </div>
+                </div>
             </div>
-            <div class="conteiner">
-                <div class="block">
-                    <img src="main/img/shop.png" alt="shop">
-                    <h3>Интернет магазин</h3>
-                    <p>img</p>
-                    <a href="https://vaseklllm.github.io/shop/">Посмотреть</a>
-                </div><br>
-            </div> 
         </div>
     </div>
 
-    <div class="list">
-        <h1 class="punct">Other</h1>
-        <div class="portfolio">
-            <div class="conteiner">
-                <div class="block">
-                    <img src="main/img/portfolio.png" alt="portfolio">
-                    <h3>Портфолио чну</h3>
-                    <p>Сверстан на flexbox</p>
-                    <a href="https://vaseklllm.github.io/chu_portfolio/">Посмотреть</a>
-                </div><br>
-            </div>
-            <div class="conteiner">
-                <div class="block">
-                    <img src="main/img/pulse_animation.png" alt="pulse_animation">
-                    <h3>Обратная связь</h3>
-                    <p>html + css</p>
-                    <a href="https://vaseklllm.github.io/pulse_animation/">Посмотреть</a>
-                </div><br>
-            </div>
-        </div>
-    </div>
+
+
+
+
     <!-- content -->
 
     <!-- footer -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="footer-left">
             <h3>portfolio<span>vasek</span></h3>
             <p class="footer-company-name">vasia.motnin &copy; 2018</p>
