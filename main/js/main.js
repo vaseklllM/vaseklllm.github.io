@@ -1,17 +1,21 @@
-// var rowHeight = document.getElementById('row-sites').offsetHeight,
-//     screenHeignt = document.documentElement.clientWidth,
-//     footerHeight = document.getElementById('footer').offsetHeight;
 
-// if(screenHeignt > rowHeight+footerHeight){
-//     document.getElementById('footer').style.bottom = 0 + "px";
-// }
-
-// document.getElementById('content').style.height = rowHeight + "px";
-document.getElementById('content').style.height = 45 + "vw";
+// document.getElementById('content').style.height = 45 + "vw";
 
 document.getElementById('sites').onclick = function(){
     document.getElementById('block-list').style.left = 0 + "%";
+    liClear();
+    this.classList.add('liHoverOn');
 }
 document.getElementById('other').onclick = function(){
     document.getElementById('block-list').style.left = -100 + "%";
+    liClear();
+    this.classList.add('liHoverOn');
 }
+
+function liClear(){
+    var libtn = document.getElementsByClassName('liBtn');
+    for (var i = 0; i < libtn.length; i++){
+        libtn[i].classList.remove('liHoverOn');
+    }
+}
+
