@@ -498,6 +498,11 @@
   .content{
     height: 200vw;
     .block-list{
+      #particles-js{
+        .particles-js-canvas-el{
+          display: none;
+        }
+      }
       .row{
         .conteiner{    
           width: 100%;
