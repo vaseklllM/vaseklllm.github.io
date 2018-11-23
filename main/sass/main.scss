@@ -491,8 +491,14 @@
         }
       }
     }
-  }
-  
+  } 
+  .nav-menu{
+    ul{
+      .liBtn{
+        font-size: 14px;
+      }
+    }
+  }   
 }
 @media (max-width: 768px) {
   .content{
@@ -523,7 +529,7 @@
         }
       }
     }
-  }  
+  }
 }
 @media (max-width: 576px) {
   
