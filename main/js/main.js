@@ -1,6 +1,3 @@
-
-// document.getElementById('content').style.height = 45 + "vw";
-
 document.getElementById('sites').onclick = function(){
     document.getElementById('block-list').style.left = 0 + "%";
     liClear();
@@ -18,4 +15,5 @@ function liClear(){
         libtn[i].classList.remove('liHoverOn');
     }
 }
+
 
