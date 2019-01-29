@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js" defer></script>
+    <script src="js/slick.js" defer></script>  
+    <script src="js/main.min.js" defer></script> 
+    <title>Магнитный держатель</title>
+</head>
+<body>
+    <script>
+    var backTimers = 50000;
+    </script>
+    <div class="checkout" id="buyCheckout">
+    <div class="form">
+    <svg id="close" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"/></svg>
+    <h3>Оформить заявку</h3>
+    <div class="input">
+        <input id="inputName" required type="text" placeholder="Имя">
+        <input id="inputPhone" required type="text" placeholder="Телефон">
+    </div>
+    <p>Название товара: <span id="productName"></span></p>
+    <button id="submit" >Отправить</button>
+    </div>
+    </div>
+    <header>
+    <nav>
+    <div class="info">
+        <ul>
+            <li>
+                <a href="#">LOGO</a>
+            </li>
+            <li onclick="slowScroll ('#comment')">Отзывы</li>
+            <li onclick="slowScroll ('#informaiton')" >Доставка и оплата</li>
+        </ul>
+    </div>
+    <div class="contacts">
+        <div class="number">
+            <a href="#"><svg viewBox="0 0 512 512"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg></a>
+            <h3>+(380) 99-633-6411  <br> <span>Круглосуточно</span></h3>
+        </div>
+        <div class="instagram">
+            <a href="#"><svg viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+        </div>
+    </div>
+    </nav>
+    <div class="header-content">
+    <div class="header-center-content">
+        <div class="left">
+            <h1>Магнитный держатель <br> для телефона всего за 175 грн.</h1>
+            <div class="header-back-timer">
+                <h3>Купите товар со скидкой 50 % прямо сейчас. Акция продлится еще:</h3>
+                <div class="backtimer">
+                    <div id="clockdiv">
+                        <div>
+                            <span class="days time"></span>
+                            <span class="dooblePoint">:</span>
+                            <div class="smalltext seconds-day">дни</div>
+                        </div>
+                        <div>
+                            <span class="hours time"></span>
+                            <span class="dooblePoint">:</span>
+                            <div class="smalltext seconds-hour">часы</div>
+                        </div>
+                        <div>
+                            <span class="minutes time"></span>
+                            <span class="dooblePoint">:</span>
+                            <div class="smalltext seconds-minute">минуты</div>
+                        </div>
+                        <div>
+                            <span class="seconds time"></span>
+                            <div class="smalltext seconds-second">секунды</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-botton">
+                <button class="boy" onclick="slowScroll ('#buy')">Оформить заказ</button>
+                <button class="playMovie" onclick="slowScroll ('#movie')">Посмотреть видео</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header-imeges-block">
+                <div class="text">
+                    <div class="left-text">
+                        <span>Вес:</span>
+                        <span>Материал:</span>
+                        <span id="color">Цвет:</span>
+                    </div>
+                    <div class="right-text">
+                        <span>0,042 кг.</span>
+                        <span>Алюминиевый сплав <br> + силикон</span>
+                        <span>Черный, Серебристый, <br> Розовое золото, Золото, Красный</span>
+                    </div>
+                </div>
+                <img src="img/magnet-header.png" alt="magnet-header">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bottom-arrow">
+    <img onclick="slowScroll ('#movie')" src="img/icon/chevron-down.svg" alt="">
+    </div>
+    </header>
+    <div class="content-block-1" id="movie">
+    <div class="top-txt">
+    <h3>
+        <span class="left">ВИДЕООБЗОР</span>
+        <span class="right">ДЕРЖАТЕЛЕЙ</span>
+    </h3>
+    </div>
+    <div class="center-content">
+    <div class="left">
+        <div class="movie">
+            <iframe width="798" height="448.875" src="https://www.youtube.com/embed/V_az_hL-Zyw" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="right">
+        <div class="info-block">
+            <div class="info">
+                <div class="row">
+                    <svg viewBox="0 0 640 512"><path d="M638.3 143.8L586.8 41c-4-8-12.1-9.5-16.7-8.9L320 64 69.8 32.1c-4.6-.6-12.6.9-16.6 8.9L1.7 143.8c-4.6 9.2.3 20.2 10.1 23L64 181.7V393c0 14.7 10 27.5 24.2 31l216.2 54.1c6 1.5 17.4 3.4 31 0L551.8 424c14.2-3.6 24.2-16.4 24.2-31V181.7l52.1-14.9c9.9-2.8 14.7-13.8 10.2-23zM86 82.6l154.8 19.7-41.2 68.3-138-39.4L86 82.6zm26 112.8l97.8 27.9c8 2.3 15.2-1.8 18.5-7.3L296 103.8v322.7l-184-46V195.4zm416 185.1l-184 46V103.8l67.7 112.3c3.3 5.5 10.6 9.6 18.5 7.3l97.8-27.9v185zm-87.7-209.9l-41.2-68.3L554 82.6l24.3 48.6-138 39.4z"/></svg>
+                    <h2><span class="top">Простота в установки <br> и использовании</span>
+                    </h2>
+                </div>
+                <p>
+                    Преимущество данных типов держателей заключается в 
+                    простоте установки и использования .
+                </p>
+            </div>
+            <div class="info">
+                <div class="row"> 
+                    <svg viewBox="0 0 512 512"><path d="M113.12 159.533L256 100v309.65c-77.73-47.559-134.486-133.931-142.88-250.117zM496 128c0 221.282-135.934 344.645-221.539 380.308a48 48 0 0 1-36.923 0C130.495 463.713 16 326.487 16 128a48 48 0 0 1 29.539-44.308l192-80a48 48 0 0 1 36.923 0l192 80A48 48 0 0 1 496 128zm-48 0L255.999 48 64 128c0 169.278 94.451 295.361 191.998 335.999C349.602 425.017 448 301.804 448 128z"/></svg>
+                    <h2><span class="top">Прорезиненный магнит</span>
+                    </h2>
+                </div>
+                <p>
+                    Огромный плюс данных держателей - прорезиненный 
+                    магнит, который обеспечивает защиту устройств 
+                    от царапин.
+                </p>
+            </div>
+            <div class="info">
+                <div class="row">
+                    <svg viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>
+                    <h2><span class="top">Качество</span>
+                    </h2>
+                </div>
+                <p>
+                    Топовое качество, 10 из 10 покупателей советуют нас 
+                    своим друзьям.                                
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div> 
+    <div class="content-block-2">
+    <div class="top-txt">
+    <h3>
+        <span class="left">ФОТОГРАФИИ</span>
+        <span class="right">ДЕРЖАТЕЛЕЙ</span>
+    </h3>
+    </div>
+    <div class="bottom-content">
+    <div class="slider">
+        <div class="slider-block"><img src="img/img-1.webp" alt="img-1"></div>
+        <div class="slider-block"><img src="img/img-2.webp" alt="img-2"></div>
+        <div class="slider-block"><img src="img/img-3.webp" alt="img-3"></div>
+        <div class="slider-block"><img src="img/img-4.webp" alt="img-4"></div>
+        <div class="slider-block"><img src="img/img-5.webp" alt="img-5"></div>
+        <div class="slider-block"><img src="img/img-6.webp" alt="img-6"></div>
+        <div class="slider-block"><img src="img/img-7.webp" alt="img-7"></div>
+        <div class="slider-block"><img src="img/img-8.webp" alt="img-8"></div>
+        <div class="slider-block"><img src="img/img-9.webp" alt="img-9"></div>
+    </div>
+    </div>
+    </div>
+    <div class="content-block-3" id="informaiton">
+    <div class="top-txt">
+    <h3>
+        <span class="left">доставка и</span>
+        <span class="right">оплата</span>
+    </h3>
+    <p>
+        Получить ваш магнитный держатель для телефона просто как раз-два-три!
+    </p>
+    </div>
+    <div class="top-block-info">
+    <div class="info-bl">
+        <img src="img/icon/check-square.svg" alt="check-square">
+        <h3>
+            Сделайте заявку <br>
+            на сайте
+        </h3>
+        <p>
+            Воспользуйтесь формой заказа и оставьте <br>
+            Ваш адрес, телефон и имя получателя.
+        </p>
+    </div> 
+    <div class="info-bl">
+        <img src="img/icon/phone-square.svg" alt="phone-square">
+        <h3>
+            Подтвердите <br>
+            заказ
+        </h3>
+        <p>
+            Наш менеджер свяжется с Вами и уточнит <br>
+            адрес доставки.
+        </p>
+    </div>
+    <div class="info-bl">
+        <img src="img/icon/box-full.svg" alt="box-full">
+        <h3>
+            Получите <br>
+            товар
+        </h3>
+        <p>
+            Получите товар в отделении новой почты.
+        </p>
+    </div>                       
+    </div>
+    <div class="bottom-block-info">
+    <div class="left">
+        <img src="img/icon/shield-alt.svg" alt="shield-alt">
+        <h3>
+            Гарантия <br>
+            безопасности
+        </h3>
+        <p>
+            Мы не берем никакой предоплаты. Вы оплачиваете свой заказ только 
+            при получении лично в руки.
+        </p>
+        <p>
+            Гарантия на товар <br>
+            Перед отправкой мы проверяем каждый экземпляр часов на 
+            роботоспособность и отсутствие внешних дефектов.
+            Мы вернем деньги если вы обнаружите какой-либо изъян.
+        </p>
+        <p>
+            Мы соблюдаем Закон “О защите прав потребителей”
+        </p>
+        <p>
+            Для возврата денег Вам достаточно.
+        </p>
+        <div class="down">
+            <p>
+                Обратиться в службу поддержки клиентов.
+            </p>
+            <p>
+                Мы вернем Вам деньги за товар в полном объеме.
+            </p>
+        </div>
+    </div>
+    <div class="right">
+            <img src="img/icon/truck.svg" alt="truck">
+            <h3>
+                Отправка товара <br>
+                происходит уже на следующий день
+            </h3>
+            <p>
+                Мы оперативно передадим Ваш заказ в службу доставки в тот же день.
+            </p>
+            <p>
+                Бесплатная доставка в отделение Новой почты.
+            </p>
+            <p>
+                Доставка часов происходит по всей Украине.
+            </p>
+    </div>
+    </div>
+    </div>
+    <div class="content-block-4" id="buy">
+    <div class="top">
+    <h3>
+        <span class="span-top">
+            <span class="left">
+                ЗАКАЖИТЕ МАГНИТНЫЙ ДЕРЖАТЕЛЬ ДЛЯ ТЕЛЕФОНА                         
+            </span>
+            <span class="right">
+                ПРЯМО СЕЙЧАС <br>
+            </span>
+        </span>
+        <span class="span-bottom">
+            <span class="left">
+                И ПОЛУЧИТЕ СКИДКУ
+            </span>
+            <span class="right">
+                50%
+            </span>
+        </span>
+    </h1>
+    </div>
+    <div class="content">
+    <div class="centerContent" id="product-sector">            
+        <!-- <div class="product">
+            <img src="../img/product/gold.png" alt="gold">
+            <h3>Золото</h3>
+            <p class="description">Магнитный держатель для телефона с клеящейся поверхностью</p>
+            <p class="price">
+                <span class="newPrice">175 грн/шт</span>
+                <span class="badPrice">350 грн/шт</span>
+            </p>
+            <button id="buy">Заказать</button>
+        </div>          -->
+    </div>
+    </div>
+    </div>
+    <div class="content-block-5" id="comment">
+    <div class="top">
+    <h3>
+        <span class="left">
+            ОТЗЫВЫ НАШИХ                       
+        </span>
+        <span class="right">
+            КЛИЕНТОВ  
+        </span>
+    </h1>
+    </div>
+    <div class="content">
+    <div class="comment">
+        <div class="left">
+            <img src="img/user-1.png" alt="user"> 
+        </div>
+        <div class="right">
+            <h3>
+                Дима Марчук
+            </h3>
+            <p>
+                Товар на месте был на следующий день после заказа. Магнит мощный, 
+                держит хорошо. Даже планшет мой держит нормально. Упаковка целая, 
+                комплектация полная.
+                <br><br>
+            </p>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="left">
+            <img src="img/user-2.png" alt="user"> 
+        </div>
+        <div class="right">
+            <h3>
+                Ярослав Токарев
+            </h3>
+            <p>Держит, маленький и аккуратный и не "режет глаз". Удачное приобретение. 
+                <br><br><br>
+            </p>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="left">
+            <img src="img/user-3.png" alt="user"> 
+        </div>
+        <div class="right">
+            <h3>
+                Александр Карлаш
+            </h3>
+            <p>Отличная вещь. Реально держит телефон даже через чехол. На ямах ничего не отваливается. При этом телефон снимется очень легко
+            </p>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="left">
+            <img src="img/user-4.png" alt="user"> 
+        </div>
+        <div class="right">
+            <h3>
+                Иван Яковленко
+            </h3>
+            <p>Хороший держатель, сам держится на отлично. За счет наличия большой железной пластины телефон держится крепко, не соскальзывает.
+            </p>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
