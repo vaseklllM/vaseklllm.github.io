@@ -505,6 +505,8 @@
     height: 248vw;
     .block-list{
       #particles-js{
+        background-color: #020318;
+        background-image: none;
         .particles-js-canvas-el{
           display: none;
         }
@@ -514,6 +516,7 @@
           width: 100%;
           height: 48.5vw;
           opacity: 1;
+          margin: 0;
           .block{
             font-size: 3vw;
             h3{
@@ -529,6 +532,9 @@
         }
       }
     }
+  }
+  .footer{
+    margin-top: 0;
   }
 }
 @media (max-width: 576px) {
