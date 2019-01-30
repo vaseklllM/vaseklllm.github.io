@@ -1,0 +1,166 @@
+$font-color: #d2dae2;
+$Myriad-Pro-regular: "ThirstyScriptRegular", sans-serif;
+
+
+
+body {
+    font-family: sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e272e;
+    width: 80%;
+    padding: 0 10%;
+    height: 60px;
+    align-items: center;
+    font-size: 14px;
+    &_left{
+        width: 320px;
+        display: flex;
+        &-launge{
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            li{
+                position: relative;
+                padding: 0 5px;
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 1px;
+                    height: 20px;
+                    background-color: $font-color;
+                    top: -2px;
+                    right: -1px;
+                }
+                &:nth-last-child(1){
+                    &::after{
+                        content: "";
+                        display: none;
+                    }
+                    a{
+                        color: #808e9b;
+                    }
+                }
+                a{
+                    color: $font-color;
+                    text-decoration: none;
+                }
+            }
+        }
+        &-logo{
+            color: $font-color;
+            margin-left: 20px;
+        }
+    }
+    &_center{
+        &-search{
+            width: 27em;
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: none;
+            font-size: 1em;
+            background-color: #515d67;
+            color: $font-color;
+            outline: none;
+            &::placeholder{
+                color: $font-color;
+                font-style: italic;
+            }
+        }
+    }
+    &_right{
+        width: 320px;
+        display: flex;
+        justify-content: flex-end;
+        &-account{
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            img[alt=person]{
+                margin-right: 10px;
+            }
+            span{
+                color: $font-color;
+                font-size: 1em;
+            }
+            img[alt=array-down]{
+                margin-left: 10px;
+            }
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 1px;
+                height: 30px;
+                background-color: $font-color;
+                top: -3px;
+                right: -15px;
+            }
+        }
+        &-basket{
+            margin-left: 15px;
+            display: flex;
+            align-items: center;
+            img[alt=basket]{
+                margin-right: 10px;
+            }
+            span{
+                font-size: 1em;
+                color: $font-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+   
+}
+
+@media (max-width: 992px) {
+    
+}
+
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+   
+}
+
+
+@media (max-width: 576px) {
+   
+}
+
+
+
+@media all and (orientation: landscape) {
+    /* Target device in landscape mode */
+}
+
+@media all and (orientation: portrait) {
+    /* Target device in portrait mode */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
