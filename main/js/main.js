@@ -43,6 +43,12 @@ let rowSites={
         img:"next.jpg",
         title:"html + css + js",
         href:"BS_NEXT"
+    },
+    'GroundStoreHomePage':{
+        name:"Ground-Store-HomePage",
+        img:"GroundStoreHomePage.jpg",
+        title:"html + css",
+        href:"GroundStoreHomePage"
     }
 };
 let rowOther={

@@ -1,5 +1,9 @@
 $font-color: #d2dae2;
-$Myriad-Pro-regular: "ThirstyScriptRegular", sans-serif;
+$bg-color: #1e272e;
+$SanFranciscoRegular: "SanFranciscoRegular", sans-serif;
+$Corbel: "Corbel", sans-serif;
+$RobotoRegular: "RobotoRegular", sans-serif;
+$RobotoMedium: "RobotoMedium", sans-serif;
 
 
 
@@ -11,7 +15,7 @@ body {
 .nav{
     display: flex;
     justify-content: space-between;
-    background-color: #1e272e;
+    background-color: $bg-color;
     width: 80%;
     padding: 0 10%;
     height: 60px;
@@ -38,22 +42,27 @@ body {
                     top: -2px;
                     right: -1px;
                 }
-                &:nth-last-child(1){
+                &:last-child{
                     &::after{
                         content: "";
                         display: none;
                     }
                     a{
+                        font-family: $Corbel;
                         color: #808e9b;
+                        font-size: 1em;
                     }
                 }
                 a{
+                    font-family: $Corbel;
+                    font-size: 1em;
                     color: $font-color;
                     text-decoration: none;
                 }
             }
         }
         &-logo{
+            font-family: $SanFranciscoRegular;
             color: $font-color;
             margin-left: 20px;
         }
@@ -87,6 +96,7 @@ body {
                 margin-right: 10px;
             }
             span{
+                font-family: $SanFranciscoRegular;
                 color: $font-color;
                 font-size: 1em;
             }
@@ -112,9 +122,81 @@ body {
                 margin-right: 10px;
             }
             span{
+                font-family: $SanFranciscoRegular;
                 font-size: 1em;
                 color: $font-color;
             }
+        }
+    }
+}
+
+header{
+    font-size: 14px;
+    background-color: #f4f4f5;
+    .categoru{
+        &_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;    
+            padding: 0 10%;
+            position: relative;
+            &::after{
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: #c1c1c1;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            &-left{
+                width: 145px;
+            }
+            &-center{
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    list-style: none;
+                    li{
+                        font-size: 1em;
+                        font-family: $Corbel;
+                        padding: 15px 20px;
+                        transition: all 0.15s ease;
+                        &:hover{
+                            background-color: $bg-color;
+                            cursor: pointer;
+                            color: $font-color;
+                        }
+                        &:first-child{
+                            background-color: $bg-color;
+                            color: $font-color;
+                        }
+                    }
+                }
+            }
+            &-right{
+                width: 145px;
+                display: flex;
+                justify-content: flex-end;
+                span{
+                    font-size: 1.15em;
+                    font-family: $RobotoMedium;
+                }
+            }
+        }
+    }
+    .slider{
+        background-color: #f4f4f5;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-family: $RobotoMedium;
+            color: #515d67;
+            font-size: 15em;
         }
     }
 }
