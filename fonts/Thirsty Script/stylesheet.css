@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Thirsty Script';
+    src: url('ThirstyScriptMedium.eot');
+    src: local('Thirsty Script Medium'), local('ThirstyScriptMedium'),
+        url('ThirstyScriptMedium.eot?#iefix') format('embedded-opentype'),
+        url('ThirstyScriptMedium.woff') format('woff'),
+        url('ThirstyScriptMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Thirsty Script Extra';
+    src: url('ThirstyScriptExtraBold.eot');
+    src: local('Thirsty Script Extra Bold'), local('ThirstyScriptExtraBold'),
+        url('ThirstyScriptExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('ThirstyScriptExtraBold.woff') format('woff'),
+        url('ThirstyScriptExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Thirsty Script';
+    src: url('ThirstyScriptRegular.eot');
+    src: local('Thirsty Script Regular'), local('ThirstyScriptRegular'),
+        url('ThirstyScriptRegular.eot?#iefix') format('embedded-opentype'),
+        url('ThirstyScriptRegular.woff') format('woff'),
+        url('ThirstyScriptRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Thirsty Script';
+    src: url('ThirstyScriptBold.eot');
+    src: local('Thirsty Script Bold'), local('ThirstyScriptBold'),
+        url('ThirstyScriptBold.eot?#iefix') format('embedded-opentype'),
+        url('ThirstyScriptBold.woff') format('woff'),
+        url('ThirstyScriptBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Thirsty Script';
+    src: url('ThirstyScriptLight.eot');
+    src: local('Thirsty Script Light'), local('ThirstyScriptLight'),
+        url('ThirstyScriptLight.eot?#iefix') format('embedded-opentype'),
+        url('ThirstyScriptLight.woff') format('woff'),
+        url('ThirstyScriptLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Thirsty Script';
+    src: url('ThirstyScriptBlack.eot');
+    src: local('Thirsty Script Black'), local('ThirstyScriptBlack'),
+        url('ThirstyScriptBlack.eot?#iefix') format('embedded-opentype'),
+        url('ThirstyScriptBlack.woff') format('woff'),
+        url('ThirstyScriptBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+

@@ -4,6 +4,7 @@ $SanFranciscoRegular: "SanFranciscoRegular", sans-serif;
 $Corbel: "Corbel", sans-serif;
 $RobotoRegular: "RobotoRegular", sans-serif;
 $RobotoMedium: "RobotoMedium", sans-serif;
+$RobotoLight: "RobotoLight", sans-serif;
 
 
 
@@ -200,6 +201,107 @@ header{
         }
     }
 }
+.container{
+    height: 1000px;
+    &_filter{
+        font-size: 16px;
+        width: 300px;
+        padding: 10px 3%;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            li{
+                position: relative;
+                &:hover > ul{
+                    top: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 1;
+                }
+                &:hover > span{
+                    position: relative;
+                    z-index: 2;
+                }
+                span{
+                    padding: 15px 0 15px 10%;
+                    width: 100%;
+                    display: block;
+                    transition: all 0.2s ease;
+                    font-size: 1em;
+                    font-family: $RobotoRegular;
+                    background-color: #ebebeb;
+                    &:hover{
+                        background-color: #3887f2;
+                        color: white;
+                    }
+                }
+                ul{
+                    border: 1px solid #ebebeb;
+                    transition: top 0.2s, opacity 0.2s ease;
+                    position: absolute;
+                    top: 0%;
+                    opacity: 0;
+                    visibility: hidden;
+                    width: 109.3%;
+                    list-style: none;
+                    li{
+                        width: 80%;
+                        padding: 10px 0 10px 20%;
+                        font-size: 1em;
+                        font-family: $RobotoRegular;
+                        background-color: #fff;
+                        &:hover{
+                            background-color: #ebebeb;
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        &::before{
+                            content: "-";
+                            margin-right: 10px;
+                            font-family: $RobotoRegular;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 80%;
+                            height: 1px;
+                            background-color: #ebebeb;
+                            bottom: -1px;
+                            left: 10%;
+                            z-index: 2;
+                        }
+                        &:last-child{
+                            &::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .active{
+                background-color: #ebebeb;
+                &::after{
+                    display: none;
+                }
+                span{
+                    background-color: #3887f2;
+                    color: white;
+                }
+                ul{
+                    position: relative;
+                    top: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: 1200px) {
    
