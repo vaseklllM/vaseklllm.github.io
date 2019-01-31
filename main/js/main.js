@@ -48,7 +48,7 @@ let rowSites={
         name:"Ground-Store-HomePage",
         img:"GroundStoreHomePage.jpg",
         title:"html + css",
-        href:"GroundStoreHomePage"
+        href:"GroundStore"
     }
 };
 let rowOther={
