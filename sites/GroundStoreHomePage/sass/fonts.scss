@@ -43,3 +43,12 @@
    font-style: normal; 
    font-weight: normal; 
 }
+@font-face {
+    font-family: "SanFranciscoLight"; 
+   src: url("../fonts/SanFranciscoLight/SFUIDisplay-Light.eot"); 
+   src: url("../fonts/SanFranciscoLight/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype"),
+   url("../fonts/SanFranciscoLight/SFUIDisplay-Light.woff") format("woff"), 
+   url("../fonts/SanFranciscoLight/SFUIDisplay-Light.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+}
